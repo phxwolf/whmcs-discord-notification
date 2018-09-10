@@ -1,5 +1,5 @@
 <?php
-$GLOBALS['discordWebHookURL'] = "Your Discord API Code";
+$GLOBALS['discordWebHookURL'] = "Your Discord webhook API Code";
 $GLOBALS['whmcsAdminURL'] = "Your WHMCS Admin Url";
 $GLOBALS['DiscordGroup'] = "@everyone";
 add_hook('CancellationRequest', 1, function($vars) {
