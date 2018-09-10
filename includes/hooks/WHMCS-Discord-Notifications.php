@@ -120,6 +120,7 @@ add_hook('InvoicePaid', 1, function($vars)	{
 ]);
 
     processNotification($DiscordMessage, $GLOBALS['discordWebHookURL'] );
+    processNotification($DiscordMessage, $GLOBALS['discordWebHookURL2'] );
 });
 
 
