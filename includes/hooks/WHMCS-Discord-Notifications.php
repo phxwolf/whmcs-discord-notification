@@ -1,5 +1,6 @@
 <?php
 $GLOBALS['discordWebHookURL'] = "Your Discord webhook API Code";
+$GLOBALS['discordWebHookURL2'] = "Your Discord webhook API Code";
 $GLOBALS['whmcsAdminURL'] = "Your WHMCS Admin Url";
 $GLOBALS['DiscordGroup'] = "@everyone";
 add_hook('CancellationRequest', 1, function($vars) {
@@ -34,6 +35,7 @@ add_hook('CancellationRequest', 1, function($vars) {
 ]);
 
     processNotification($DiscordMessage, $GLOBALS['discordWebHookURL'] );
+    processNotification($DiscordMessage, $GLOBALS['discordWebHookURL2'] );
 });
 add_hook('TicketUserReply', 1, function($vars)	{
  
@@ -67,6 +69,7 @@ add_hook('TicketUserReply', 1, function($vars)	{
 ]);
 
     processNotification($DiscordMessage, $GLOBALS['discordWebHookURL'] );
+    processNotification($DiscordMessage, $GLOBALS['discordWebHookURL2'] );
 });
 add_hook('TicketOpen', 1, function($vars)	{
    
@@ -100,6 +103,7 @@ add_hook('TicketOpen', 1, function($vars)	{
 ]);
 
     processNotification($DiscordMessage, $GLOBALS['discordWebHookURL'] );
+    processNotification($DiscordMessage, $GLOBALS['discordWebHookURL2'] );
 });
 add_hook('InvoicePaid', 1, function($vars)	{
 
