@@ -1,6 +1,6 @@
 <?php
-$GLOBALS['discordWebHookURL'] = "https://discordapp.com/api/webhooks/449772500726054912/SXB-RB-RZwjne8QLi-tRayxpjlyXFgPE1UplTuy421gaPJ9BW114DYwXAg7Xqmrtkgl2";
-$GLOBALS['whmcsAdminURL'] = "https://bladeportal.net/scp/";
+$GLOBALS['discordWebHookURL'] = "Your Discord Api Code";
+$GLOBALS['whmcsAdminURL'] = "Your Whmcs Admin Url";
 $GLOBALS['DiscordGroup'] = "@everyone";
 add_hook('CancellationRequest', 1, function($vars) {
    
